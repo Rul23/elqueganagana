@@ -13,9 +13,9 @@ $susy = new Moderador();
        $valores[$i]=$susy->avientalosDados();  
           echo "<img src='../utilerias/img/".$susy->queladoEs($valores[$i])."'/>";
   }
-      $total = $susy->Resultados($valores);
-      // $entradas = array('jesus'=>6 , 'raul'=>5,"enrique" => 7 );
-     // var_dump($susy->diceGanador($entradas, $total));
+      echo $total = $susy->Resultados($valores);
+      $entradas = array('jesus'=>6 , 'raul'=>5,"enrique" => 7 );
+      var_dump($susy->diceGanador($entradas, $total));
       
   ?>
     </body>

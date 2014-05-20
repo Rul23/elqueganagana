@@ -13,13 +13,12 @@ public function Resultados($valores /*Arreglo*/)
    return array_sum($valores); 
 }
 
-public function diceGanador($entredas/*arreglo*/,$total)
+public function diceGanador($entradas/*arreglo*/,$total)
 {
   $resultados = array();
- for($i=1;$i <= count($entredas); $i++)
- {
- $resultados[$i]= $total-$entredas[$i];  
- }   
+  foreach ($entradas as $key => $value) {
+      $resultados[$key]= $value -$total;
+  }  
        
  return $resultados;
 }
